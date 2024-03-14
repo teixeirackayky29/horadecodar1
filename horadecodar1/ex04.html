@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /*4
+        Considerando a figura abaixo, escreva um programa para cada forma que calcule 
+        e exiba em tela cada uma de suas respectivas áreas. O usuário irá informar os 
+        valores de cada variável.*/
+
+
+        function calcAreaRetangulo (base, altura){
+            return base * altura
+        }
+
+        function calcAreaQuadrado (lado){
+            return lado * lado
+        }
+
+        function calcAreaLosango (DMaior, DMenor){
+            return (DMaior * DMenor)/2
+        }
+
+        function calcAreaTrapezio (BMaior, BMenor, altura){
+            return ((BMaior * BMenor) * altura)/2
+        }
+
+        function calcAreaParalelogramo (base, altura){
+            return base * altura
+        }
+
+        function calcAreaTriangulo (base, altura){
+            return (base * altura)/2
+        }
+
+        function calcAreaCirculo (raio){
+            return  Math.PI * raio * raio
+        }
+
+        var baseretangulo = parseFloat(prompt("Digite a base do retangulo: "))
+        var alturaretangulo = parseFloat(prompt("Digite a altura do retangulo: "))
+        var ladoquadrado = parseFloat(prompt("Digite o lado do quadrado: "))
+        var DiagonalMaior = parseFloat(prompt("Digite a diagonal maior: "))
+        var DiagonalMenor = parseFloat(prompt("Digite a diagonal menor: "))
+        var BaseMaiorTrapezio = parseFloat(prompt("Digite a base maior Trapezio: "))
+        var BaseMenorTrapezio = parseFloat(prompt("Digite a base menor Trapezio: "))
+        var baseParalelogramo = parseFloat(prompt("Digite a base do Paralelogramo: "))
+        var alturaParalelogramo = parseFloat(prompt("Digite a altura do Paralelogramo: "))
+        var baseTriangulo = parseFloat(prompt("Digite a base do triangulo: "))
+        var alturaTriangulo = parseFloat(prompt("Digite a altura do triangulo: "))
+        var raioCirculo = parseFloat(prompt("Digite o raio do circulo: "))
+
+        console.log(`A area do retangulo é : ${calcAreaRetangulo, baseretangulo, alturaretangulo}`)
+        console.log(`A area do quadrado é :${calcAreaQuadrado, ladoquadrado}`)
+        console.log(`A area do losango é :${calcAreaLosango, DMaior, DMenor}`)
+        console.log(`A area do Trapezio é :${calcAreaTrapezio, BMaior, BMenor, altura}`)
+        console.log(`A area do Paralelogramo é :${calcAreaParalelogramo, base, altura}`)
+        console.log(`A area do Triangulo é :${calcAreaTriangulo, base, altura}`)
+        console.log(`A area do circulo é :${calcAreaCirculo, raioCirculo}`)
+        
+
+    </script>
+</body>
+</html>
